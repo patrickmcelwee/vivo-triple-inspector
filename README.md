@@ -1,13 +1,12 @@
 vivo-triple-inspector
 =====================
 
-Inspect VIVO triples related to a specified VIVO uri. Two files:
+Inspect VIVO triples related to a specified VIVO uri. Inspectors consists of two 
+HTML files files:
 
-# Usage
-
-1. inspector-request.html  Present a form to a user where the user can 
+1. `inspector-request.html`  Present a form to a user where the user can 
 type in a VIVO URI.  Submit the form via a GET to inspector-results.html
-1. inspector-results.html Receive a VIVO URI via a GET, create a SPARQL 
+1. `inspector-results.html` Receive a VIVO URI via a GET, create a SPARQL 
 query to return the triples that have the specified URI as the subject.
 Display the triples using D3.js in three columns:
     1. Show the predicate as a link to the predicate definition
@@ -27,7 +26,7 @@ the html file.
 # D3
 
 inspector-results.html uses D3.js to display results.  D3 is a powerful 
-Javascript library for data driven documents.  See d3js.org
+Javascript library for data driven documents.  See http://d3js.org
 
 # License
 
