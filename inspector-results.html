@@ -99,7 +99,7 @@ function draw(data) {
 	d3.selectAll("div.line")
 		.append("a")
 			.attr("class","object")
-			.attr("href",function(d) { if((d.o.value.length > 8) && (d.o.value.substring(0,7) == "http://")) {return "/inspector-results.html?vivouri="+d.o.value;} else {return ".";}})
+			.attr("href",function(d) { if((d.o.value.length > 8) && ((d.o.value.substring(0,8) == "https://") || (d.o.value.substring(0,7) == "http://"))) {return "/inspector-results.html?vivo_uri="+d.o.value;} else {return ".";}})
 			.text(function(d){if (d.o.value.length >0) {return d.o.value;} else {return "No value";}})
 			
 	d3.select("#header")
